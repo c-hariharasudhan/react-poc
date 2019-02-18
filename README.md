@@ -1,2 +1,2 @@
 # dictionary-poc
-MEAN / MERN Stack POC
+React application POC
