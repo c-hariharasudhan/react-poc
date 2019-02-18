@@ -1,0 +1,54 @@
+{
+  "name": "dictionary-poc",
+  "version": "1.0.0",
+  "description": "React POC",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -w tests/helpers/setup.js ./tests/**/*.spec.js -r mock-local-storage",
+    "build": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "start": "npm run build",
+    "build-prod": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c-hariharasudhan/dictionary-poc.git"
+  },
+  "keywords": [
+    "ReactJs"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/c-hariharasudhan/dictionary-poc/issues"
+  },
+  "homepage": "https://github.com/c-hariharasudhan/dictionary-poc#readme",
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
+  "dependencies": {
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "chai": "^4.2.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.9.1",
+    "html-webpack-plugin": "^3.2.0",
+    "jsdom": "^13.2.0",
+    "mocha": "^5.2.0",
+    "mock-local-storage": "^1.1.8",
+    "react-hot-loader": "^4.6.5",
+    "react-test-renderer": "^16.8.2",
+    "webpack": "^4.0.0",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
+  }
+}
